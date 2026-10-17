@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+@font-face {
+    font-family: minhafonte;
+    src: url('space\ age.ttf');
+}
+@font-face {
+    font-family: squarefonte;
+    src: url(Square.ttf);
+}
+main{
+    display: block;
+    width: 100%;
+    margin: 0px auto ;
+    background-color: rgba(224, 222, 220, 0);
+}
+body{
+    height: 100%;
+    background-image: linear-gradient(45deg, #E4DCD1, #E4DCD1, #E4DCD1);
+    background-size: cover;
+    text-align: center;
+}
+
+.navegation{
+    background-color: black;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    
+ 
+}  
+.items-navegation{
+    padding-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    font-size: 1.7rem;
+
+}
+.items-navegation a{
+    display: block;
+    text-decoration: none;
+}
+.items-navegation a::after{
+    content: '';
+    display: block;
+    height: 0.3rem;
+    width: 25%;
+    background-color: red;
+    transition: all 150ms ease-in-out;
+}
+.items-navegation a:hover::after{
+    display: block;
+    height: 0.3rem;
+    width: 100%;
+    background-color: red;
+     
+}
+.items-navegation a:hover{
+   transform: scale(1.1);
+}
+a:visited{
+    color: rgb(250, 250, 250);
+}
+
+
+
+.form{
+    padding-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+    background-color: rgb(145, 142, 142);
+}
+#nome{
+    margin-top: 0.8rem;
+}
+#date{
+    margin-top: 0.5rem;
+}
+#color{
+   margin-top: 0.5rem;
+}
+#option{
+    margin: 0.5rem;
+}
+button{
+    padding: 0.8rem;
+    border-radius: 20rem 2rem 20rem;
+    margin-bottom: 2rem;
+}
+
+.main-content{
+    background-color: rgb(112, 112, 112);
+    width: 100%;
+    
+}
+.main-content h2{
+font-size: 5rem;
+}
+.main-content p{
+font-size: 2.5rem;
+}
+.img-all{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.img-01{
+    animation: img-01 2s ease-in-out infinite alternate-reverse;
+    border-radius: 50%;
+    box-shadow: 0 0 30px green;
+}
+.img-02{
+    animation: img-01 2s ease-in-out infinite alternate-reverse;
+    border-radius: 50%;
+    box-shadow: 0 0 30px white;
+}
+
+
+.dedo-para-baixo{
+    margin-bottom: 6rem;
+    animation: dedo 0.2s ease-in-out infinite alternate-reverse;
+    border-radius: 50%;
+    
+}
+.video-re4{
+    margin-bottom: 7rem;
+}
+
+
+
+label, label select, button{
+    cursor: pointer;
+}
+label input{
+    cursor: pointer;
+}
+label select option:nth-child(4){
+    background-color: rgb(156, 2, 2);
+    color: white;
+}
+.table-content{
+font-size: 2rem;
+
+
+
+
+}
+.title{
+    margin: 2rem auto;
+}
+.paragrafo{
+    margin: 2em auto;
+}
+p.paragrafo::first-letter{
+    font-size: 35px;
+    display: block;
+}
+
+
+
+
+table, footer {
+    clear: both;
+}
+#back{
+    position: absolute;
+}
+table {
+    border-collapse: collapse;
+}
+table caption{
+    caption-side: bottom;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-top: 5px;
+
+}
+table th, table td{
+    border: 5px solid #ccc;
+    padding: 5px;
+}
+tfoot td, table th{
+    background-color: #ddd;
+}
+.footer-into-content{
+    display: flex;
+    font-size: 3rem;
+    justify-content: space-around;
+}
+.span-01 label a{
+    display: flex;
+}
+.span-02 label{
+    display: flex;
+}
+
+@keyframes img-01{
+    to{
+        transform: scale(1.2);
+    }
+}
+@keyframes dedo{
+    to{
+        transform: translateY(2rem);
+    }
+}

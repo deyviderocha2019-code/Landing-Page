@@ -1,0 +1,605 @@
+:root{
+    --primary-color: #000000;
+    --white-color: #fff;
+    --padding: 20rem auto
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+}
+h1{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 1rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 4.5rem;
+}
+h5{
+    font-size: 4rem;
+}
+h6{
+    font-size: 3.5rem;
+}
+p{
+    font-size: 2rem;
+}
+.main-background {
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+    background-position: center center;
+    color: var(--white-color);
+}
+.white-background{
+    background: var(--white-color);
+}
+.section{
+    min-height: 100vh;
+}
+.menu{
+    background: var(--white-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.icon{
+    padding-left: 1rem;
+    /*animation-name: icon; /*O nome da @keyframes*/
+    /*animation-duration: 1s; /*O tempo que a animação leva para ser executada*/
+    /*animation-timing-function: ease-in-out; /*Define a curva de velocidade*/
+    /*animation-delay: 1s; /*O tempo para começar a animação*/
+    /*animation-iteration-count: infinite; /*O número de vezes que uma sequência de animação deve ser reproduzida antes de parar*/
+    /*animation-direction: alternate; /*Direção da animação*/
+    /*animation-fill-mode: both; /*Controla como os estilos de uma animação são aplicados ao elemento antes dela começar e após ela terminar*/
+    /*animation-play-state: running; /*Se uma animação está em execução (running) ou pausada (paused)*/
+
+    animation: icon 1s ease-in-out infinite alternate;    
+}    
+
+
+.menu ul{
+    list-style: none;
+    display: flex;
+
+}
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: rgb(146, 143, 144);
+    transition: all 200ms ease-in-out;
+}
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
+}
+.menu ul li a:hover{
+    transform: scale(1.1, 1.1);
+}
+.menu-spacing{
+    height: 54px;
+}
+
+
+.intro-content{
+    position: relative;
+    top: -7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1px;
+    height: 100vh;
+}
+.intro-text-content, .intro-img{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+
+}
+.intro-text-content h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+abbr{
+ text-decoration: underline;
+ color: aqua;
+cursor: pointer;
+
+}
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.secundary{
+    color: black;
+}
+.secundary-text-content h2{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+.secundary-text-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    position: relative;
+    margin-bottom: 40rem;
+}
+.secundary-img{
+    display: block;
+    
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+.secundary-img-01{
+    animation: secundary-img-01 1s ease-in-out infinite alternate-reverse  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.secundary-img-01-text{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.secundary-img-01:hover{
+    animation-play-state: paused;
+    transform: translateY(-39rem);
+    transition: 0.8s;
+    transition-timing-function: ease;
+   
+}
+.secundary-img-01:hover .secundary-img-01-text{
+    animation: secundary-img-01-text 1s ease forwards;
+    animation-delay: 0.2s;
+    display: block;
+    top: 12rem;
+    width: 50%;
+    font-weight: bold;
+}
+.secundary-img-02{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    
+}
+.secundary-img-02-text{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.secundary-img-02:hover{
+    animation-play-state: paused;
+    transform: scale(0.6);
+    transform: translateY(31rem);
+    transition: 1s;
+}
+.secundary-img-02:hover .secundary-img-02-text{
+    animation: secundary-img-02-text 1s ease forwards;
+    animation-delay: 0.2s;
+    display: block;
+    bottom: 60rem;
+    width: 50%;
+    font-weight: bold;
+}
+.secundary-img-03{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: secundary-img-03 1s ease-in-out infinite alternate-reverse;
+}
+.secundary-img-03-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    margin-top: -17rem;
+    font-style: italic;
+}
+.secundary-img-04{
+
+    display: flex;
+}
+.secundary-img-05{
+    animation: secundary-img-05 6s ease-in-out infinite alternate-reverse;
+}
+
+
+.grid-one-content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    position: relative;
+}
+.tertiary-content-text{
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+}
+.tertiary-content-text h2{
+    display: flex;
+    font-size: 5rem;
+    text-align: center;
+    justify-content: center;
+}
+.tertiary-content-text p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.grid-one{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    counter-reset: grid-counter;
+    
+    
+}
+.grid h3{
+    font-size: 5rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+
+}
+.grid h3::before{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 7rem;
+    font-style: italic;
+    top: -3rem;
+    left: 1rem;
+    transform: rotate(5deg);
+    animation: grid 0.8s ease-in-out infinite alternate-reverse;
+
+}
+.grid-img-01{
+   width: 100%;
+   box-shadow: 5px 9px 50px greenyellow;
+}
+.grid-img-01:hover{
+   transform: scale(0.8);
+   transition: 0.4s;
+
+}
+.grid-img-02{
+   width: 50%;
+   margin-top: 4rem;
+   margin-left: 20rem;
+   box-shadow: 5px 9px 50px red;
+}
+.grid-img-02:hover{
+   transform: scale(1.1);
+   transition: 0.5s;
+   
+}
+
+
+.fourth{
+    color: #000000;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+.grid-two-content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: wrap;
+    position: relative;
+}
+.grid-two{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+column-gap: 1rem;
+row-gap: 1rem;
+top: 10rem;
+position: absolute;
+}
+.grid-two-text h2{
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-two-description{
+    font-size: 1rem;   
+}
+.fourth-img{
+    width: 100%;
+    height: 100%;
+    max-width: 100rem;
+    overflow: hidden;
+}
+.fourth-img img{
+    transition: all 300ms ease-in-out;
+     box-shadow: -5px 5px 10px rgb(0, 0, 0);
+     border-radius: 10%;
+     
+     
+}
+.fourth-img img:hover{
+    transform: translate(-3%) scale(1.1) rotate(3deg);
+    cursor: pointer;
+    
+   
+}
+.aside-01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 110vh;
+    width: 20%;
+    overflow: hidden;
+}
+.aside-02 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 110vh;
+    width: 20%;
+    overflow: hidden;
+}
+
+
+.footer{
+    position: relative;
+}
+.img-movie-01{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+.img-movie-02{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+.img-movie-02 img{
+    border-radius: 50%;
+}
+.title-footer h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
+.img-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.img-footer img{
+    border-radius: 50%;
+    box-shadow: 0 0 100px 5px rgb(197, 55, 233);
+    animation: img-footer 0.8s ease-in-out infinite alternate-reverse;
+}
+.fieldset{
+    margin-left: 20px;
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 97%;
+    font-size: 4rem;
+    flex-flow: column wrap;
+    padding-bottom:5px;
+    border-radius: 10px 50px;
+    box-shadow: 10px 5px 10px rgb(153, 8, 250);
+    border-color: rgb(129, 3, 247);
+
+}
+.input-01{
+    font-size: 3rem;
+}
+.select{
+    width: 100%;
+    height: 100%;
+    font-size: 4rem;
+}
+.option{
+    font-size: 2rem;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    font-size: 3rem;
+}
+.button-01{
+    background: none;
+    color: #fff;
+    border: 0.3rem solid rgb(153, 33, 233);
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    box-shadow: 0 0 10px 5px rgb(63, 63, 63);
+    border-radius: 40%;
+}
+.button-01:hover{
+    background-color: rgb(153, 33, 233);
+}
+.button-continued{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.button-02{
+    background-color: greenyellow;
+    font-size: 2rem;
+    border-radius: 10px 10px;
+    box-shadow: 0 0 15px 5px greenyellow;
+    cursor: pointer;
+    transition: all 250ms ease-in;
+    text-decoration: none;
+    padding: 10px;
+}
+.button-02:hover{
+    background-color: orange;
+    box-shadow: 0 0 15px 5px orange;
+}
+
+@keyframes secundary-img-01-text{
+    100%{ opacity: 1;
+        transform: scale(1.1); 
+    }
+}
+@keyframes secundary-img-02-text{
+    to{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+@keyframes secundary-img-03{
+    from{
+        transform: scale(0.1);
+    }
+    
+    to{
+        opacity: 1;
+        transform: scale(0.2);
+        }
+}
+@keyframes icon{
+    100%{
+      transform: scale(1.3,1.3);
+    }
+}
+@keyframes secundary-img-05{
+    to{
+        transform: translateX(42vw);
+    }
+}
+@keyframes grid {
+    from{
+        transform: rotate(-20deg);
+    }
+    to{
+        transform: rotate(20deg);
+    }
+}
+@keyframes border {
+    0%{
+       transform: rotate(360deg); 
+    }
+}
+@keyframes img-footer{
+    from{
+        box-shadow: 0 0 30px 3px rgb(197, 55, 233);
+    }
+    to{
+        box-shadow: 0 0 90px 3px rgb(197, 55, 233);
+    }
+}
+@media (max-width: 800px) {
+    .intro-content{
+        grid-template-columns: 1fr;
+    }    
+
+    .secundary-text-content p{
+        font-size: 3rem;
+        text-indent: 20px;
+    }
+
+    .secundary-content, .secundary-img{
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .secundary-img img{
+        width: 90%;
+    }
+    .secundary-img .secundary-img-01 p{
+        font-size: 1.7rem;
+        transform: translateY(7rem);
+        transition: 0.8s;
+    }
+    .secundary-img-02 p{
+        font-size: 1.6rem;
+        transform: translateY(25rem);
+        transition: 1s;
+    }
+    .menu-spacing{
+        height: 100px;
+    }
+    .secundary-img-03 {
+        max-width: 100%;
+        max-height: 100%;
+        top: -15rem;
+    }
+    .secundary-img-03-text p{
+        font-size: 1.5rem;
+        margin-top: -35rem;
+    }
+    .secundary-img-04 img{
+        width: 15%;
+    }
+    .secundary-img-05{
+            animation: secundary-img-05 2s ease-in-out infinite alternate-reverse;
+    }
+
+}
