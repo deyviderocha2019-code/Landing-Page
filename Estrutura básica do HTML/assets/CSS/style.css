@@ -83,7 +83,7 @@ p{
    transform: scale(1.1);
 }
 a:visited{
-    color: rgb(236, 206, 71);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -187,7 +187,7 @@ font-size: 2rem;
     margin: 2em auto;
 }
 p.paragrafo::first-letter{
-    font-size: 35px;
+    font-size: 30px;
     display: block;
 }
 
@@ -226,8 +226,22 @@ tfoot td, table th{
 .span-01 label a{
     display: flex;
 }
+.span-01 p{
+    display: flex;
+    color: #030303;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
 .span-02 label{
     display: flex;
+}
+.span-02 p{
+    display: flex;
+    color: #030303;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 
