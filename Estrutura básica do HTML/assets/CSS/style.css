@@ -23,18 +23,24 @@ main{
 }
 body{
     height: 100%;
-    background-image: linear-gradient(45deg, #E4DCD1, #E4DCD1, #E4DCD1);
+    background-color: #ADADAD;
     background-size: cover;
     text-align: center;
 }
+.spacing{
+    height: 25px;
+}
+
+
 
 .navegation{
-    background-color: black;
+    background-color: #030303;
     height: 5rem;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
+    text-decoration: none;
     
  
 }  
@@ -45,9 +51,8 @@ body{
     justify-content: space-evenly;
     cursor: pointer;
     font-size: 1.7rem;
-
 }
-.items-navegation a{
+.items-navegation li a{
     display: block;
     text-decoration: none;
 }
@@ -56,21 +61,21 @@ body{
     display: block;
     height: 0.3rem;
     width: 25%;
-    background-color: red;
+    background-color: rgb(247, 250, 57);
     transition: all 150ms ease-in-out;
 }
 .items-navegation a:hover::after{
     display: block;
     height: 0.3rem;
     width: 100%;
-    background-color: red;
+    background-color: rgb(243, 239, 29);
      
 }
 .items-navegation a:hover{
    transform: scale(1.1);
 }
 a:visited{
-    color: rgb(250, 250, 250);
+    color: rgb(236, 206, 71);
 }
 
 
@@ -79,7 +84,8 @@ a:visited{
     padding-top: 3rem;
     margin-bottom: 5rem;
     font-size: 1.8rem;
-    background-color: rgb(145, 142, 142);
+    background-color: #ADADAD;
+    color: #BF6B04;
 }
 #nome{
     margin-top: 0.8rem;
@@ -97,18 +103,25 @@ button{
     padding: 0.8rem;
     border-radius: 20rem 2rem 20rem;
     margin-bottom: 2rem;
+    color: #BF6B04;
+}
+button:hover{
+    transform: scale(0.9);
+    transition: 300ms;
 }
 
 .main-content{
-    background-color: rgb(112, 112, 112);
+    background-color: #F2F2F2;
     width: 100%;
     
 }
 .main-content h2{
 font-size: 5rem;
+color: #BF6B04;
 }
 .main-content p{
 font-size: 2.5rem;
+color: #BF6B04;
 }
 .img-all{
     margin-top: 5rem;
@@ -137,7 +150,10 @@ font-size: 2.5rem;
     margin-bottom: 7rem;
 }
 
-
+.the100{
+    width: 250px;
+    height: 300px;
+}
 
 label, label select, button{
     cursor: pointer;
@@ -206,6 +222,8 @@ tfoot td, table th{
     display: flex;
 }
 
+
+
 @keyframes img-01{
     to{
         transform: scale(1.2);
@@ -215,4 +233,118 @@ tfoot td, table th{
     to{
         transform: translateY(2rem);
     }
+}
+
+@media(max-width: 800px) {
+
+.navegation{
+     background-color: #030303;
+    height: 3.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}  
+.items-navegation{
+    padding-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    font-size: 0.9rem;
+
+}
+.items-navegation a{
+    display: block;
+    text-decoration: none;
+}
+.items-navegation a::after{
+    content: '';
+    display: block;
+    height: 0.2rem;
+    width: 25%;
+    background-color: rgb(247, 250, 57);
+    transition: all 150ms ease-in-out;
+}
+.items-navegation a:hover::after{
+    display: block;
+    height: 0.3rem;
+    width: 100%;
+    background-color: rgb(247, 250, 57);
+}
+.items-navegation a:hover{
+   transform: scale(1.1);
+}
+a:visited{
+    color: rgb(250, 250, 250);
+}
+
+
+.main-content{
+    background-color: #F2F2F2;
+    width: 100%;
+}
+.main-content h2{
+font-size: 3.5rem;
+}
+.main-content p{
+font-size: 1.5rem;
+}
+.img-all{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.img-01{
+    animation: img-01 2s ease-in-out infinite alternate-reverse;
+    border-radius: 50%;
+    box-shadow: 0 0 30px green;
+}
+.img-02{
+    animation: img-01 2s ease-in-out infinite alternate-reverse;
+    border-radius: 50%;
+    box-shadow: 0 0 30px white;
+}
+
+.the100{
+    width: 200px;
+    height: 250px;
+}
+iframe{
+    width: 100%;
+}
+
+
+.table-content{
+    font-size: 1.5rem;
+}
+
+/* .footer-content{
+
+}
+.footer-into-content{
+
+} */
+.span-01{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+
+}
+.span-01 p{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    color: #030303;
+}
+.span-02{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+}
+.span-02 p{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+}
 }
