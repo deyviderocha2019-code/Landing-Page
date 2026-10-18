@@ -40,7 +40,9 @@ p{
   font-weight: 400;
   font-style: normal;
 }
-
+li {
+  list-style-type: none;
+}
 .navegation{
     background-color: #030303;
     height: 5rem;
@@ -244,7 +246,10 @@ tfoot td, table th{
     justify-content: center;
 }
 
-
+.the100{
+    width: 250px;
+    height: 350px;
+}
 
 @keyframes img-01{
     to{
@@ -257,7 +262,7 @@ tfoot td, table th{
     }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 767px) {
 
 .navegation{
      background-color: #030303;
@@ -271,9 +276,9 @@ tfoot td, table th{
     padding-top: 1.2rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
 
 }
 .items-navegation a{
@@ -330,7 +335,7 @@ font-size: 1.5rem;
 
 .the100{
     width: 200px;
-    height: 250px;
+    height: 300px;
 }
 iframe{
     width: 100%;
@@ -368,5 +373,8 @@ iframe{
     display: flex;
     font-size: 1.2rem;
     align-items: center;
+}
+.ultimo{
+    padding-top: 2rem;
 }
 }

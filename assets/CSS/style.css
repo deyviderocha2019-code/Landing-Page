@@ -47,6 +47,7 @@ p{
   font-family: "Syncopate", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 1.3rem;
 }
 .main-background {
     background-color: #000000;
@@ -380,9 +381,10 @@ position: absolute;
 }
 .fourth-img img{
     transition: all 300ms ease-in-out;
-     box-shadow: -5px 5px 10px rgb(0, 0, 0);
+    box-shadow: -5px 5px 10px rgb(0, 0, 0);
     border-radius: 10%;
-     
+    height: 340px;
+    width: 250px;
      
 }
 .fourth-img img:hover{
@@ -582,13 +584,32 @@ position: absolute;
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
+    .menu{
+    background: var(--white-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+    .menu ul li a{
+    display: block;
+    text-decoration: none;
+    padding-right: 1rem;
+    font-size: 1rem;
+    position: relative;
+}
+
+
+
     .intro-content{
         grid-template-columns: 1fr;
     }    
 
     .secundary-text-content p{
-        font-size: 3rem;
+        font-size: 1.4rem;
         text-indent: 20px;
     }
 
@@ -601,13 +622,13 @@ position: absolute;
         width: 90%;
     }
     .secundary-img .secundary-img-01 p{
-        font-size: 1.7rem;
+        font-size: 1.1rem;
         transform: translateY(7rem);
         transition: 0.8s;
     }
     .secundary-img-02 p{
-        font-size: 1.6rem;
-        transform: translateY(25rem);
+        font-size: 1.1rem;
+        transform: translateY(-5rem);
         transition: 1s;
     }
     .menu-spacing{
@@ -616,7 +637,7 @@ position: absolute;
     .secundary-img-03 {
         max-width: 100%;
         max-height: 100%;
-        top: -15rem;
+        top: -10rem;
     }
     .secundary-img-03-text p{
         font-size: 1.5rem;
@@ -626,21 +647,18 @@ position: absolute;
         width: 15%;
     }
     .secundary-img-05{
-            animation: secundary-img-05 0s ease-in-out infinite alternate-reverse;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        animation: secundary-img-05 0s ease-in-out infinite alternate-reverse;
             
     }
-    .menu ul li a{
-    display: block;
-    text-decoration: none;
-    padding: 2rem;
-    font-size: 1.2rem;
-    position: relative;
-
-    }
+    
 
 
     .tertiary{
         min-height: 100vh;
+
     }
     .grid-one-content{
         
@@ -711,7 +729,7 @@ position: absolute;
     .grid-img-02{
     width: 50%;
     margin-top: 4rem;
-    margin-left: 13rem;
+    margin-left: 11rem;
     box-shadow: 5px 9px 50px red;
     }
     .grid-img-02:hover{
@@ -726,9 +744,7 @@ position: absolute;
         padding: 0;
         color: #000000;
         /* position: relative; */
-        min-height: 100vh;
-
-        
+        min-height: 100vh; 
     }
     .grid-two-content{
         display: flex;
@@ -739,10 +755,8 @@ position: absolute;
     }
     .grid-two{
         min-height: 100dvh;
-        overflow: hidden;
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        grid-template-rows: repeat(5, minmax(0, 1fr));
-        gap: 0.2rem;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
 
     }
     .grid-two-text h2{
@@ -752,26 +766,27 @@ position: absolute;
         justify-content: center;
     }
     .grid-two-text p{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
+        text-indent: 1rem;
     }
     .grid-two-description{
         font-size: 1rem;   
     }
     .fourth-img{
+
         width: 100%;
-        max-width: 100rem;
+        max-width: 100%;
         
     }
     .fourth-img img{
         transition: all 300ms ease-in-out;
         box-shadow: -5px 5px 10px rgb(0, 0, 0);
         border-radius: 10%;
-        height: 180px;
-        width: 160px;
+        height: 250px;
+        width: 188px;
         
         
     }
@@ -819,7 +834,8 @@ position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 2rem;
+        margin-bottom: 8rem;
+        padding-left: 5rem;
     }
     .img-footer{
         display: flex;
@@ -827,8 +843,8 @@ position: absolute;
         justify-content: center;
     }
     .img-footer img{
-        width: 450px;
-        height: 480px;
+        width: 350px;
+        height: 400px;
         border-radius: 50%;
         box-shadow: 0 0 100px 5px rgb(197, 55, 233);
         animation: img-footer 0.8s ease-in-out infinite alternate-reverse;
