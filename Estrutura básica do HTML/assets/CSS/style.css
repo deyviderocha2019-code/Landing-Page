@@ -30,8 +30,16 @@ body{
 .spacing{
     height: 25px;
 }
-
-
+h1,h2,h3,h4,h5,h6{
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p{
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .navegation{
     background-color: #030303;
